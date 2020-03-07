@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>1</title>
+	<style>
+		*{padding: 0; margin: 0}
+		body{background: url(../image/bg2.jpg) no-repeat center center;}
+		h1{width: 500px; height: 100px;
+			color: grey;
+			font-size: 70px;
+			margin: 20px auto;
+			text-shadow: 5px 5px 10px;
+			box-shadow: 5px 5px 5px 5px black;
+		}
+
+		.box21{width: 400px; height: 50px;
+			color: black;
+			text-shadow: 5px 5px 10px;
+			margin: 50px 500px;
+		}
+		#user1{margin: 0 550px;
+		}
+
+		.box22{width: 400px; height: 50px;
+			color: black;
+			text-shadow: 5px 5px 10px;
+			margin: 100px 500px;
+		}
+
+		#user2{margin: 0 550px;}
+		
+		.box23{width: 400px; height: 50px;
+				color: black;
+				text-shadow: 5px 5px 10px;
+				margin: 100px 500px;
+			}
+		
+		#user4{width: 200px; height: 50px;
+				color: black;
+				text-shadow: 5px 5px 10px;
+				margin: 100px 470px;
+				font-size: 30px;
+				padding-left: 10px;
+				margin-left: 530px;
+				box-shadow: 5px 5px 5px 5px ;
+		}
+
+		
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">
+		<h1>女朋友注册界面</h1>
+	</div>
+
+	<br><br><br><br>
+
+	<form class="box2">
+		<span class="box21">请输入用户名（结尾必须为"重阳爸爸"）：</span><br>
+		<input type="text" id="user1"><br><br><br><br>
+		<span class="box22">请输入密码：</span><br>
+		<input type="password" id="user2"><br><br><br>
+		<span class="box23"><input type="radio" id="user3" name="xuan"> &nbsp;&nbsp;&nbsp; 未满150cm，请在父母陪同下观看</span><br>
+	</form>
+	<button id="user4" name="xuan" onclick="yz()">确认并提交</button>
+
+
+
+<script type="text/javascript">
+	function yz(){
+		var n1 = document.getElementById('user1').value;
+		var n2 = document.getElementById('user2').value;
+		var n11 = n1.substring((n1.length)-4, n1.length);
+		
+		
+		if (n11 == '重阳爸爸') {
+			if (n2 !== '') {
+				alert("进入高能页面！！！ 多动动你的小猪头，想想");
+				window.location.href="2.html";
+			}else{
+				alert('密码不能为空');
+			}
+		}else{
+			alert('今天必须给我叫爸爸');
+		}		
+			
+		
+		
+	}
+</script>
+</body>
+</html>
