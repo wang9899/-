@@ -58,9 +58,9 @@
 	<br><br><br><br>
 
 	<form class="box2">
-		<span class="box21">输入用户名,结尾必须为'重阳爸爸'</span><br>
+		<span class="box21">输入用户名结尾为"重阳爸爸"</span><br>
 		<input type="text" id="user1"><br><br><br><br>
-		<span class="box22">输入密码</span><br>
+		<span class="box22">请输入密码：</span><br>
 		<input type="password" id="user2"><br><br><br>
 		<span class="box23"><input type="radio" id="user3" name="xuan"> &nbsp;未满150cm请在父母陪同下观看</span><br>
 	</form>
@@ -72,18 +72,16 @@
 	function yz(){
 		var n1 = document.getElementById('user1').value;
 		var n2 = document.getElementById('user2').value;
-		var n11 = n1.substring((n1.length)-4, n1.length);
+		alert("进入高能页面！！！ 多动动你的小猪头，想想");
 		
-		
-		if (n11 == '重阳爸爸') {
+		if (n1 !== '') {
 			if (n2 !== '') {
-				alert("进入高能页面！！！ 多动动你的小猪头，想想");
 				window.location.href="2.html";
 			}else{
 				alert('密码不能为空');
 			}
 		}else{
-			alert('今天必须给我叫爸爸');
+			alert('叫爸爸');
 		}		
 			
 		
